@@ -19,17 +19,17 @@ body {
 nav {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 60px;
+    grid-template-rows: 108px;
     align-items: center;
 }
 
 #nav-logo {
     grid-column: 2 / 3;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: bold;
     justify-self: end;
-    margin-right: 44px;
+    margin-right: 82px;
 }
 
 nav a {
