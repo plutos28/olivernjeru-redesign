@@ -1,5 +1,8 @@
 body {
     font-family: sans-serif;
+
+    /* remove the os cursor icon */
+    cursor: none;
 }
 
 /* Container Section */
@@ -28,6 +31,9 @@ nav a {
     color: black;
     text-decoration: none;
     font-weight: bold;
+
+    /* remove cursor hand icon */
+    cursor: none;
 }
 
 nav a:hover {
