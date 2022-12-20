@@ -1,5 +1,5 @@
 // Create logo text into a circle
-new CircleType(document.getElementById("nav-logo"));
+// new CircleType(document.getElementById("nav-logo"));
 
 // Create the custom cursor with extra effects
 let kursorx = new kursor({

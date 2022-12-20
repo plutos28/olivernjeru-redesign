@@ -2,6 +2,7 @@ body {
     font-family: sans-serif;
 }
 
+/* Navbar Section */
 #nav-logo {
     position: absolute;
     left: 100px;
@@ -12,9 +13,19 @@ body {
 
 nav a {
     color: black;
+    text-decoration: none;
 }
 
-/* Custom Cursor Things */
+.hoverable:hover {
+    color: blue;
+}
+
+nav a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+/* Custom Cursor Section */
 .cursor-hover {
     background-color: blue !important;
     transform: translate(-50%, -50%) scale(2) !important;
