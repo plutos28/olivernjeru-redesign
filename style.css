@@ -52,7 +52,13 @@ nav .links {
 
 #photos-link {
     margin-left: 8px;
+    margin-right: 8px;
 }
+
+#contact-link {
+    margin-left: 8px;
+}
+
 
 /* Custom Cursor Section */
 .cursor-hover {
