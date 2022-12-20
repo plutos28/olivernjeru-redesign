@@ -9,3 +9,18 @@ body {
     font-size: 0.9rem;
     font-weight: bold;
 }
+
+nav a {
+    color: black;
+}
+
+/* Custom Cursor Things */
+.cursor-hover {
+    background-color: blue !important;
+    transform: translate(-50%, -50%) scale(2) !important;
+    mix-blend-mode: difference !important;
+}
+
+.kursorChild {
+    visibility: hidden !important;
+}
