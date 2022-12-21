@@ -89,6 +89,11 @@ nav .links {
     width: 84rem;
 }
 
+.asterix-hero {
+    display: inline;
+    width: 4rem;
+}
+
 .underline {
     text-decoration: underline;
 }
