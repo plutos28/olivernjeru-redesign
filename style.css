@@ -75,10 +75,18 @@ nav .links {
 }
 
 /* Hero Section */
+.hero {
+    padding-top: 95px;
+}
+
 .hero h1 {
-    font-size: 33px;
+    /* font-size: 33px;
     font-weight: 500;
-    width: 65ch;
+    width: 65ch; */
+
+    font-size: 53px;
+    font-weight: 500;
+    width: 84rem;
 }
 
 .underline {
