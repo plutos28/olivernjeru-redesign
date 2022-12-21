@@ -13,10 +13,16 @@ body {
 /* Container Section */
 .container {
     display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* column-gap: 32px; */
+    grid-auto-rows: auto;
+    margin-left: 44px;
+    margin-right: 44px;
 }
 
 /* Navbar Section */
 nav {
+    grid-column: 1 / span 12;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 60px;
@@ -29,7 +35,6 @@ nav {
     font-size: 0.9rem;
     font-weight: bold;
     justify-self: end;
-    margin-right: 44px;
 }
 
 nav a {
@@ -49,7 +54,6 @@ nav a:hover {
 nav .links {
     grid-column: 1 / 2;
     justify-self: start;
-    margin-left: 44px;
 }
 
 #work-link {
@@ -70,6 +74,16 @@ nav .links {
     margin-left: 8px;
 }
 
+/* Hero Section */
+.hero h1 {
+    font-size: 33px;
+    font-weight: 500;
+    width: 65ch;
+}
+
+.underline {
+    text-decoration: underline;
+}
 
 /* Custom Cursor Section */
 .cursor-hover {
