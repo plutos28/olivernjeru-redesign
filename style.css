@@ -107,7 +107,17 @@ nav .links {
     padding: 95px 0;
 }
 
-.photo img {
+.photo {
+    background-image: none;
+    background-color: rgba(0, 220, 150, 1);
+    background-size: auto;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+
+.photo img:hover {
+    opacity: 0;
+    transition: 0.6s;
 }
 
 /* Custom Cursor Section */
