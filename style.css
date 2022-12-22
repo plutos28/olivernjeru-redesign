@@ -81,12 +81,11 @@ nav .links {
 }
 
 .hero h1 {
-    /* font-size: 33px;
-    font-weight: 500;
-    width: 65ch; */
-
     font-size: 53px;
     font-weight: 500;
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+    transition: all 1s ease-out;
 }
 
 .asterix-hero {
