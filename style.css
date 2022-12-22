@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 body {
     /* font-family: 'Montserrat', sans-serif; */
     /* font-family: 'Inter', sans-serif; */
-    font-family: 'Archivo', sans-serif;
+/*    font-family: 'Archivo', sans-serif;*/
+/*    font-family: 'Besley', serif;*/
+    font-family: 'Poppins', sans-serif;
 
 
     /* remove the os cursor icon */
     cursor: none;
+    background-color: #000;
+    color: #fff;
 }
 
 /* Container Section */
@@ -27,6 +33,7 @@ nav {
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 60px;
     align-items: center;
+    font-size: 12pxf;
 }
 
 #nav-logo {
@@ -38,7 +45,7 @@ nav {
 }
 
 nav a {
-    color: black;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 
@@ -47,7 +54,7 @@ nav a {
 }
 
 nav a:hover {
-    color: blue;
+    color: #ff6900;
     text-decoration: none;
 }
 
@@ -82,7 +89,7 @@ nav .links {
 
 .hero h1 {
     font-size: 53px;
-    font-weight: 500;
+    font-weight: 400;
     opacity: 0;
     transform: translate3d(0, 50px, 0);
     transition: all 1s ease-out;
@@ -94,7 +101,8 @@ nav .links {
 }
 
 .underline {
-    text-decoration: underline;
+/*    text-decoration: underline;*/
+    font-weight: bold;
 }
 
 /* Photos Section */
@@ -121,7 +129,7 @@ nav .links {
 
 /* Custom Cursor Section */
 .cursor-hover {
-    background-color: blue !important;
+    background-color: #fff !important;
     transform: translate(-50%, -50%) scale(2) !important;
 /*    mix-blend-mode: difference !important;*/
 }
@@ -131,7 +139,8 @@ nav .links {
 }
 
 .hoverable:hover {
-    color: blue;
+/*    color: #fff;*/
+/*    text-decoration: underline;*/
 }
 
 

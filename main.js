@@ -4,7 +4,7 @@
 // Create the custom cursor with extra effects
 let kursorx = new kursor({
     type: 2,
-    color: "#000"
+    color: "#fff"
 })
 
 // Change the dimensions of the cursor when it hovers over hoverables
