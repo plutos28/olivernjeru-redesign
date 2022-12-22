@@ -98,6 +98,18 @@ nav .links {
     text-decoration: underline;
 }
 
+/* Photos Section */
+.photos-container {
+    grid-column: 1 / span 12;
+    display: grid;
+    grid-template-columns: repeat(4, calc(100% / 4));
+    grid-gap: 10px;
+    padding: 95px 0;
+}
+
+.photo img {
+}
+
 /* Custom Cursor Section */
 .cursor-hover {
     background-color: blue !important;
@@ -112,3 +124,4 @@ nav .links {
 .hoverable:hover {
     color: blue;
 }
+
