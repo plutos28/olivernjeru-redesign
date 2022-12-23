@@ -28,3 +28,24 @@ function onMouseLeaveHoverable(e) {
     // Change the blending mode and size of kursor and kursorChild
     kursorx.kursor.classList.remove("cursor-hover");
 }
+
+
+// Fade in the hero h1 text when the document loads
+const heroH1 = document.querySelector(".hero h1");
+window.addEventListener("load", (e) => {
+    heroH1.style.cssText += "opacity: 1;";
+    // move back to original position
+    heroH1.style.cssText += "transform: translate3d(0, 0, 0);";
+});
+
+// Trigger the sticky navbar
+const navbar = document.querySelector("nav");
+const sticky = navbar.offsetTop;
+
+window.addEventListener("scroll", (e) => {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+    }
+});

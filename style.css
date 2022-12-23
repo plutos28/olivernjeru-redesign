@@ -13,10 +13,16 @@ body {
 /* Container Section */
 .container {
     display: grid;
+    grid-template-columns: repeat(12, calc(100% / 12));
+    /* column-gap: 32px; */
+    grid-auto-rows: auto;
+    margin-left: 44px;
+    margin-right: 44px;
 }
 
 /* Navbar Section */
 nav {
+    grid-column: 1 / span 12;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 60px;
@@ -29,7 +35,6 @@ nav {
     font-size: 0.9rem;
     font-weight: bold;
     justify-self: end;
-    margin-right: 44px;
 }
 
 nav a {
@@ -49,7 +54,6 @@ nav a:hover {
 nav .links {
     grid-column: 1 / 2;
     justify-self: start;
-    margin-left: 44px;
 }
 
 #work-link {
@@ -70,12 +74,67 @@ nav .links {
     margin-left: 8px;
 }
 
+.sticky {
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 60px;
+    align-items: center;
+}
+
+
+/* Hero Section */
+.hero {
+    padding-top: 95px;
+    grid-column: 1 / span 12;
+}
+
+.hero h1 {
+    font-size: 53px;
+    font-weight: 500;
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+    transition: all 1s ease-out;
+}
+
+.asterix-hero {
+    display: inline;
+    width: 4rem;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* Photos Section */
+.photos-container {
+    grid-column: 1 / span 12;
+    display: grid;
+    grid-template-columns: repeat(4, calc(100% / 4));
+    grid-gap: 10px;
+    padding: 95px 0;
+    overflow: auto;
+}
+
+.photo {
+    background-image: none;
+    background-color: rgba(0, 220, 150, 1);
+    background-size: auto;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+
+.photo img:hover {
+    opacity: 0;
+    transition: 0.6s;
+}
 
 /* Custom Cursor Section */
 .cursor-hover {
     background-color: blue !important;
     transform: translate(-50%, -50%) scale(2) !important;
-    mix-blend-mode: difference !important;
+/*    mix-blend-mode: difference !important;*/
 }
 
 .kursorChild {
@@ -84,4 +143,27 @@ nav .links {
 
 .hoverable:hover {
     color: blue;
+}
+
+
+/* Custom Scrollbar Section */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  cursor: none;
 }
