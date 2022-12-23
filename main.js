@@ -37,3 +37,15 @@ window.addEventListener("load", (e) => {
     // move back to original position
     heroH1.style.cssText += "transform: translate3d(0, 0, 0);";
 });
+
+// Trigger the sticky navbar
+const navbar = document.querySelector("nav");
+const sticky = navbar.offsetTop;
+
+window.addEventListener("scroll", (e) => {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+    }
+});
